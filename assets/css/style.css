@@ -25,11 +25,11 @@ body {
 header {
   display: flex;
   flex-flow: column nowrap;
-  background-color: var(--color-01);
+  background-color: var(--color-04);
   border-radius: 0px 0px 30px 30px;
   width: 90%;
   margin: auto;
-  padding: 10px 10px 5px 0px;
+  padding: 10px 10px 0px 0px;
   margin-bottom: 50px;
   border-bottom: solid 3px var(--color-00);
 }
@@ -45,12 +45,13 @@ header > h1 {
   border-radius: 0px 20px 20px 0px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-header > nav {
+header > .menu {
   display: flex;
   justify-content: end;
   flex-flow: row wrap;
+  margin-bottom: 5px;
 }
-header > nav > a {
+header > nav > .naveg {
   text-align: center;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color: var(--color-00);
@@ -61,22 +62,64 @@ header > nav > a {
   text-decoration: none;
   margin-left: 10px;
 }
-nav > a:hover {
+nav > .naveg:hover {
   transform: scale(1.1);
   transition: all 0.3s ease-out;
-  background-color: var(--color-03);
+  background-color: var(--color-01);
+}
+.icons {
+  display: flex;
+  width: 150px;
+  margin: 10px 10px;
+}
+.icons > a {
+}
+.icons > a > img {
+  border-radius: 50%;
+  width: 35px;
+  margin-right: 8px;
+}
+.icons > a > img.insta:hover {
+  box-shadow: 0px 0px 5px #d8005a, 0px 0px 5px #d8005a, 0px 0px 8px #d8005a;
+  background-color: #d8005a;
+  filter: brightness(1.5);
+  transform: scale(1.1);
+}
+.icons > a > img.face:hover {
+  box-shadow: 0px 0px 8px #475993, 0px 0px 8px #475993, 0px 0px 8px #475993,
+    0px 0px 8px #475993;
+  background-color: #475993;
+  filter: brightness(1.5);
+  transform: scale(1.2);
+}
+.icons > a > img.link:hover {
+  box-shadow: 0px 0px 8px #0379b8, 0px 0px 8px #0379b8, 0px 0px 8px #0379b8,
+    0px 0px 8px #0379b8;
+  background-color: #0379b8;
+  filter: brightness(1.5);
+  transform: scale(1.2);
+}
+
+.icons > a > img.git:hover {
+  box-shadow: 0px 0px 8px var(--color-00), 0px 0px 8px var(--color-00);
+  background-color: #ffffff;
+  filter: brightness(1.5);
+  transform: scale(1.2);
 }
 .planos {
+  background-color: var(--color-02);
   max-width: 80%;
   margin: auto;
-  height: 250px;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
   border-radius: 20px;
 }
-div {
+.left,
+.middle,
+.middle1,
+.right {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   min-width: 200px;
   height: 270px;
@@ -87,7 +130,10 @@ div {
   color: var(--color-00);
   border: solid 1px var(--color-00);
 }
-div:hover {
+.left:hover,
+.middle:hover,
+.middle1:hover,
+.right:hover {
   transform: scale(1.1);
   transition: all 0.3s ease-out;
 }
@@ -113,7 +159,7 @@ div > p {
   box-shadow: inset 0px 0px 5px black;
   width: 150px;
 }
-div > a {
+div > .plan {
   text-decoration: none;
   color: var(--color-00);
   background-color: #15bdf5;
