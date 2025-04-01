@@ -97,6 +97,10 @@ div > h1 {
 div > h2 {
   color: var(--color-01);
 }
+hr {
+  width: 166px;
+  margin: auto;
+}
 div > ul > li {
   list-style: none;
   padding-bottom: 5px;
