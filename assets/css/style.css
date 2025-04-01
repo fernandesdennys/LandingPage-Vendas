@@ -108,7 +108,7 @@ nav > .naveg:hover {
 }
 .planos {
   background-color: var(--color-02);
-  max-width: 80%;
+  max-width: 50%;
   margin: auto;
   display: flex;
   flex-flow: row wrap;
