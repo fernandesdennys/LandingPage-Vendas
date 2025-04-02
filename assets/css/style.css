@@ -17,10 +17,13 @@
 }
 html,
 body {
+  display: flex;
+  flex-direction: column;
   height: 100%;
-  justify-content: center;
-  align-items: center;
   background-color: var(--color-06);
+}
+main {
+  flex: 1;
 }
 header {
   display: flex;
@@ -29,7 +32,7 @@ header {
   border-radius: 0px 0px 30px 30px;
   width: 90%;
   margin: auto;
-  padding: 10px 10px 0px 0px;
+  padding: 10px 10px 5px 0px;
   margin-bottom: 50px;
   border-bottom: solid 3px var(--color-00);
 }
@@ -39,9 +42,8 @@ header > h1 {
   display: flex;
   align-items: center;
   background-color: var(--color-05);
-  max-width: 250px;
-  height: 50px;
-  padding-left: 10px;
+  max-width: 200px;
+  padding: 10px;
   border-radius: 0px 20px 20px 0px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -80,35 +82,34 @@ nav > .naveg:hover {
   margin-right: 8px;
 }
 .icons > a > img.insta:hover {
-  box-shadow: 0px 0px 5px #d8005a, 0px 0px 5px #d8005a, 0px 0px 8px #d8005a;
+  box-shadow: 0px 0px 5px 3px #d8005a;
   background-color: #d8005a;
   filter: brightness(1.5);
   transform: scale(1.1);
 }
 .icons > a > img.face:hover {
-  box-shadow: 0px 0px 8px #475993, 0px 0px 8px #475993, 0px 0px 8px #475993,
-    0px 0px 8px #475993;
+  box-shadow: 0px 0px 8px 4px #475993;
   background-color: #475993;
   filter: brightness(1.5);
   transform: scale(1.2);
 }
 .icons > a > img.link:hover {
-  box-shadow: 0px 0px 8px #0379b8, 0px 0px 8px #0379b8, 0px 0px 8px #0379b8,
-    0px 0px 8px #0379b8;
+  box-shadow: 0px 0px 8px 4px #0379b8;
   background-color: #0379b8;
   filter: brightness(1.5);
   transform: scale(1.2);
 }
 
 .icons > a > img.git:hover {
-  box-shadow: 0px 0px 8px var(--color-00), 0px 0px 8px var(--color-00);
+  box-shadow: 0px 0px 8px 2px #ffffff;
   background-color: #ffffff;
   filter: brightness(1.5);
   transform: scale(1.2);
 }
 .planos {
   background-color: var(--color-02);
-  max-width: 50%;
+  width: 90%;
+  max-width: 1100px;
   margin: auto;
   display: flex;
   flex-flow: row wrap;
@@ -122,7 +123,7 @@ nav > .naveg:hover {
 .right {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   min-width: 200px;
-  height: 270px;
+  padding-bottom: 15px;
   margin: 10px;
   border-radius: 15px;
   text-align: center;
@@ -149,12 +150,17 @@ hr {
 }
 div > ul > li {
   list-style: none;
-  padding-bottom: 5px;
+  padding-bottom: 10px;
+}
+span {
+  font-size: 15px;
 }
 div > p {
   color: var(--color-01);
   margin: auto;
+  margin-bottom: 15px;
   padding: 3px;
+
   border-radius: 15px;
   box-shadow: inset 0px 0px 5px black;
   width: 150px;
@@ -164,5 +170,28 @@ div > .plan {
   color: var(--color-00);
   background-color: #15bdf5;
   padding: 5px 45px;
+  border-radius: 5px;
+}
+
+footer {
+  background-color: var(--color-01);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 8px;
+}
+footer > p {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: var(--color-06);
+}
+footer > p > a {
+  color: black;
+  text-decoration: none;
+  padding: 5px 5px;
+}
+footer > p > a:hover {
+  background-color: #0379b8;
+  padding: 5px;
   border-radius: 5px;
 }
