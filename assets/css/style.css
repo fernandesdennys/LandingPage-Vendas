@@ -21,6 +21,7 @@ body {
   flex-direction: column;
   height: 100%;
   background-color: var(--color-06);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 main {
   flex: 1;
@@ -45,7 +46,6 @@ header > h1 {
   max-width: 200px;
   padding: 10px;
   border-radius: 0px 20px 20px 0px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 header > .menu {
   display: flex;
@@ -53,9 +53,8 @@ header > .menu {
   flex-flow: row wrap;
   margin-bottom: 5px;
 }
-header > nav > .naveg {
+header > .menu > .naveg {
   text-align: center;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color: var(--color-00);
   background-color: var(--color-06);
   border: solid 1px var(--color-00);
@@ -64,7 +63,7 @@ header > nav > .naveg {
   text-decoration: none;
   margin-left: 10px;
 }
-nav > .naveg:hover {
+.menu > .naveg:hover {
   transform: scale(1.1);
   transition: all 0.3s ease-out;
   background-color: var(--color-01);
@@ -74,11 +73,10 @@ nav > .naveg:hover {
   width: 150px;
   margin: 10px 10px;
 }
-.icons > a {
-}
+
 .icons > a > img {
   border-radius: 50%;
-  width: 35px;
+  width: 25px;
   margin-right: 8px;
 }
 .icons > a > img.insta:hover {
@@ -86,6 +84,7 @@ nav > .naveg:hover {
   background-color: #d8005a;
   filter: brightness(1.5);
   transform: scale(1.1);
+  transform: (1.1);
 }
 .icons > a > img.face:hover {
   box-shadow: 0px 0px 8px 4px #475993;
@@ -117,11 +116,8 @@ nav > .naveg:hover {
   align-items: center;
   border-radius: 20px;
 }
-.left,
-.middle,
-.middle1,
-.right {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+.container_mid {
   min-width: 200px;
   padding-bottom: 15px;
   margin: 10px;
@@ -131,46 +127,67 @@ nav > .naveg:hover {
   color: var(--color-00);
   border: solid 1px var(--color-00);
 }
-.left:hover,
-.middle:hover,
-.middle1:hover,
-.right:hover {
-  transform: scale(1.1);
-  transition: all 0.3s ease-out;
+.container_mid:hover {
+  transform: scale(1.05);
+  transition: ease 0.5s;
 }
-div > h1 {
+.container_mid > h1 {
   padding: 15px;
 }
-div > h2 {
+.container_mid > h2 {
   color: var(--color-01);
 }
+span {
+  font-size: 15px;
+  font-weight: lighter;
+  color: var(--color-00);
+}
+
 hr {
   width: 166px;
   margin: auto;
 }
-div > ul > li {
+.container_mid > ul > li {
   list-style: none;
-  padding-bottom: 10px;
+  padding-top: 8px;
 }
-span {
-  font-size: 15px;
-}
-div > p {
+.container_mid > .instal {
   color: var(--color-01);
-  margin: auto;
-  margin-bottom: 15px;
-  padding: 3px;
-
+  margin: 15px auto;
+  padding: 5px;
   border-radius: 15px;
   box-shadow: inset 0px 0px 5px black;
   width: 150px;
 }
-div > .plan {
+.container_mid > .plan {
   text-decoration: none;
   color: var(--color-00);
   background-color: #15bdf5;
   padding: 5px 45px;
   border-radius: 5px;
+}
+.info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-00);
+  margin: 20px;
+}
+
+.info_help {
+  color: var(--color-06);
+  border: solid 2px #0379b8;
+  background-color: var(--color-01);
+  border-radius: 15px;
+  font-weight: 300;
+  text-decoration: none;
+  padding: 5px;
+  margin-left: 10px;
+}
+.info_help:hover {
+  background-color: var(--color-00);
+  color: var(--color-01);
+  font-weight: bold;
 }
 
 footer {
@@ -184,6 +201,7 @@ footer {
 footer > p {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color: var(--color-06);
+  margin-bottom: 5px;
 }
 footer > p > a {
   color: black;

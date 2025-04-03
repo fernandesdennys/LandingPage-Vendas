@@ -13,6 +13,13 @@
   .icons {
     margin: 10px auto;
   }
+  .planos {
+    width: 70%;
+    height: 40%;
+    overflow-y:scroll;
+}
+.info {
+  flex-wrap: wrap;
 }
 
 /* Tablets (481px a 768px) */
