@@ -33,9 +33,10 @@ header {
   border-radius: 0px 0px 30px 30px;
   width: 90%;
   margin: auto;
-  padding: 10px 10px 5px 0px;
+  padding: 20px 10px 5px 0px;
   margin-bottom: 50px;
   border-bottom: solid 3px var(--color-00);
+  box-shadow: 0px 0px 10px inset black;
 }
 header > h1 {
   color: var(--color-00);
@@ -45,7 +46,9 @@ header > h1 {
   background-color: var(--color-05);
   max-width: 200px;
   padding: 10px;
-  border-radius: 0px 20px 20px 0px;
+  margin-left: -3px;
+  border-radius: 3px 20px 20px 3px;
+  box-shadow: 5px 0px 14px black;
 }
 header > .menu {
   display: flex;
@@ -58,6 +61,7 @@ header > .menu > .naveg {
   color: var(--color-00);
   background-color: var(--color-06);
   border: solid 1px var(--color-00);
+  box-shadow: 0px 0px 10px inset black;
   padding: 5px 15px;
   border-radius: 20px;
   text-decoration: none;
@@ -115,6 +119,7 @@ header > .menu > .naveg {
   justify-content: center;
   align-items: center;
   border-radius: 20px;
+  box-shadow: 0px 0px 10px inset black;
 }
 
 .container_mid {
@@ -178,6 +183,7 @@ hr {
   color: var(--color-06);
   border: solid 2px #0379b8;
   background-color: var(--color-01);
+  box-shadow: 0px 0px 10px 1px inset black;
   border-radius: 15px;
   font-weight: 300;
   text-decoration: none;
