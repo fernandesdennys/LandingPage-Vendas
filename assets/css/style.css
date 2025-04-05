@@ -38,7 +38,7 @@ header {
   border-bottom: solid 3px var(--color-00);
   box-shadow: 0px 0px 10px inset black;
 }
-header > h1 {
+header > .titte_principal {
   color: var(--color-00);
   text-shadow: 0px 0px 5px var(--color-00);
   display: flex;
@@ -141,6 +141,9 @@ header > .menu > .naveg {
 }
 .container_mid > h2 {
   color: var(--color-01);
+}
+.tittle_plan {
+ font-size: 1.5em;
 }
 span {
   font-size: 15px;
