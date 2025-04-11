@@ -35,7 +35,7 @@ header {
   margin: auto;
   padding: 20px 10px 5px 0px;
   margin-bottom: 50px;
-  border-bottom: solid 3px var(--color-00);
+  border-bottom: solid 4px var(--color-00);
   box-shadow: 0px 0px 10px inset black;
 }
 header > .titte_principal {
@@ -143,7 +143,7 @@ header > .menu > .naveg {
   color: var(--color-01);
 }
 .tittle_plan {
- font-size: 1.5em;
+  font-size: 1.5em;
 }
 span {
   font-size: 15px;
@@ -198,6 +198,36 @@ hr {
   color: var(--color-01);
   font-weight: bold;
 }
+.home_service {
+  display: flex;
+  flex-wrap: wrap;
+  background-image: url(/assets/img/jogos1280x720.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.home_btn {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card_home {
+  display: flex;
+  color: var(--color-06);
+  background-color: #ffffff;
+  text-decoration: none;
+  border-radius: 15px;
+  width: 150px;
+  height: 100px;
+  margin: 10px;
+}
+.card_service {
+  width: 250px;
+  height: 100px;
+  background-color: #ffffff;
+  margin: 10px;
+}
 
 footer {
   background-color: var(--color-01);
@@ -209,7 +239,8 @@ footer {
 }
 footer > p {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  color: var(--color-06);
+  color: var(--color-00);
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.849);
   margin-bottom: 5px;
 }
 footer > p > a {
