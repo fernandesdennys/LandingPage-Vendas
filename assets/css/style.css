@@ -183,6 +183,7 @@ hr {
 }
 
 .info_help {
+  display: flex;
   color: var(--color-06);
   border: solid 2px #0379b8;
   background-color: var(--color-01);
@@ -193,19 +194,35 @@ hr {
   padding: 8px;
   margin-left: 10px;
 }
+.info a > .fa-headset {
+  padding-right: 5px;
+  margin-top: 0px;
+  font-size: 20px;
+}
 .info_help:hover {
   background-color: var(--color-00);
   color: var(--color-01);
   font-weight: bold;
 }
 .home_service {
-  display: flex;
-  flex-wrap: wrap;
-  background-image: url(/assets/img/jogos1280x720.jpg);
-  background-position: center center;
-  background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 1;
+  overflow: hidden; /* evita vazamentos visuais */
 }
+
+.home_service::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url(/assets/img/jogos1280x720.jpg);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.3; /* ajuste conforme o quanto transparente você quer */
+  z-index: -1;
+}
+
 .home_btn {
   display: flex;
   justify-content: center;
@@ -213,7 +230,7 @@ hr {
 }
 
 .card_home {
-  display: flex;
+  display: block;
   color: var(--color-06);
   background-color: #ffffff;
   text-decoration: none;
@@ -222,7 +239,24 @@ hr {
   height: 100px;
   margin: 10px;
 }
+.card_home:hover {
+  background-color: var(--color-01);
+  color: var(--color-00);
+}
+.card_title {
+  padding-top: 5px;
+  font-size: 14px;
+  text-align: center;
+}
+a > .fa-solid {
+  margin-top: 20px;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+}
 .card_service {
+  display: block;
+  justify-content: center;
   width: 250px;
   height: 100px;
   background-color: #ffffff;
@@ -235,7 +269,7 @@ footer {
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding: 8px;
+  padding: 6px;
 }
 footer > p {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
