@@ -39,7 +39,6 @@
     .menu {
       justify-content: space-between;
     }
-    
   }
 
   /* Telas grandes (acima de 1024px) */
@@ -47,6 +46,5 @@
     .menu {
       display: flex;
     }
-
   }
 }
